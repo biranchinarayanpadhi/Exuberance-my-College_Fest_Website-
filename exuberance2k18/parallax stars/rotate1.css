@@ -1,0 +1,16 @@
+#img1{
+  
+animation: logo 20s linear infinite;
+}
+
+@keyframes logo{
+0% {transform: rotateX(0deg);}
+
+35% {transform: rotateX(360deg);}
+    
+55% {transform: rotateY(0deg);}
+    
+    75% {transform: rotateY(360deg);}
+    
+    100% {transform: scaleX(0deg);}
+}

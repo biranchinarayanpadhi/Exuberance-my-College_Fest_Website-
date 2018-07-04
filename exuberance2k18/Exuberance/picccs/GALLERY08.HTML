@@ -1,0 +1,184 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, height=device-height, initial-scale=1">
+ <divnk rel:"stylesheet" href: "https://www.w3schools.com/code/tryit.asp?filename=FLQP2N9JNF36">
+</head>
+<style>
+@import "compass/css3";
+
+/*Be sure to look into browser prefixes for keyframes and annimations*/
+.flash {
+   animation-name: flash;
+    animation-duration: 1s;
+    animation-timing-function: divnear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color:rgb(0,0,0,0.5);}
+    to {color: black;}
+}
+
+
+body > div {
+  width: 100%;
+  min-width: 400px;
+  margin: 0 auto;
+  height: 230%;
+}
+
+
+div {
+  width: 200px;
+  float: left;
+  margin: 0 10px 10px 0;
+  -webkit-filter: sepia(0.7);
+  position: relative;
+  -webkit-transition: 0.5s;
+}
+
+div:hover {
+  -webkit-filter: sepia(0);
+  z-index:1 ;
+}
+
+div:nth-child(3n) {
+  margin-right: 0;
+}
+
+div:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+img {
+  -webkit-transition: 0.5s;
+  max-width: 100%;
+  box-shadow: 1px 1px 5px rgba(218, 165, 32, 0.7);
+  float: left;
+  border: 8px sodivd white;
+  border-bottom-width: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div:nth-child(1) img {
+  -webkit-transform: translate(-10px, 20px) rotate(-10deg);
+}
+
+div:nth-child(2) img {
+  -webkit-transform: translate(-20px, 70px) rotate(10deg);
+}
+
+div:nth-child(3) img {
+  -webkit-transform: translate(-40px, 5px) rotate(13deg);
+}
+
+div:nth-child(4) img {
+  -webkit-transform: translate(-20px, 20px) rotate(5deg);
+}
+
+div:nth-child(5) img {
+  -webkit-transform: translate(-30px, 50px) rotate(-10deg);
+}
+
+div:nth-child(6) img {
+  -webkit-transform: translate(-40px) rotate(5deg);
+}
+
+div:nth-child(7) img {
+  -webkit-transform: translate(-10px, 20px) rotate(-10deg);
+}
+
+div:nth-child(8) img {
+  -webkit-transform: translate(-20px, 70px) rotate(5deg);
+}
+
+div:nth-child(9) img {
+  -webkit-transform: translate(-40px, 5px) rotate(-10deg);
+}
+
+div:nth-child(10) img {
+  -webkit-transform: translate(-20px, 20px) rotate(5deg);
+}
+
+div:nth-child(11) img {
+  -webkit-transform: translate(-30px, 50px) rotate(-10deg);
+}
+
+div:nth-child(12) img {
+  -webkit-transform: translate(-40px) rotate(5deg);
+}
+div img:hover {
+  box-shadow: 0px 20px 50px 10px rgba(218, 165, 32, 0.7), 0px 20px 50px 10px rgba(218, 165, 32, 0.7);
+  -webkit-transform: scale(2);
+}
+</style>
+<style>
+body{ background: #111; margin: 0px;}
+div#banner{
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	background-color: #000;
+	background-image: url(background.png), url(foreground.png);
+	background-position:0px 0px, 0px 0px;
+	background-repeat:repeat, repeat;
+	animation: animate-background linear 7s infinite;
+}
+@keyframes animate-background{
+	from{ background-position: 0px 0px, 0px 0px; }
+	to{ background-position: -500px 0px, -500px 0px;}
+}
+</style>
+<body>
+
+<div id="banner">
+ 
+  <h1 class="flash" style="text-align:center; font-family:algerian ;font-size: 60px;padding-bottom: 5px; color: rgb(218, 165, 32); opacity: 1">GALLERY</h1>
+
+  <ul> 
+      <div>
+        <img  src="img01.jpg" alt="Landscape" hspace="50px">
+      </div>
+      <div>
+        <img src="img02.jpg" alt="Landscape" hspace="50px">
+        </div>
+      <div>
+        <img src="img03.jpg" alt="Landscape" hspace="50px">
+        </div>
+      <div>
+        <img src="img04.jpg" alt="Landscape" hspace="50px">
+        </div>
+      <div>
+        <img src="img05.jpg" alt="Landscape" hspace="50px">
+        </div>
+      <div>
+        <img src="img06.jpg" alt="Landscape" hspace="50px">
+        </div>
+        <div>
+        <img src="img07.jpg" alt="Landscape" hspace="50px">
+      </div>
+      <div>
+        <img src="img08.jpg" alt="Landscape" hspace="50px">
+        </div>
+      <div>
+        <img src="img09.jpg" alt="Landscape" hspace="50px">
+        </div>
+      <div>
+        <img src="img10.jpg" alt="Landscape" hspace="50px">
+        </div>
+      <div>
+        <img src="img01.jpg" alt="Landscape" hspace="50px">
+        </div>
+      <div>
+        <img src="img02.jpg" alt="Landscape" hspace="50px">
+        </div>
+    </ul>
+</div>
+
+</div>
+  </body>
+  </html>

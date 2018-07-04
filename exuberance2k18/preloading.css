@@ -1,0 +1,64 @@
+.bb, .bb::before, .bb::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bb {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background: url("logo.png") no-repeat 50%/70% rgba(0, 0, 0, 0.1);
+  color: #D2691E;
+  box-shadow: inset 0 0 0 1px rgba(135, 206, 250, 0.5);
+}
+.bb::before, .bb::after {
+  content: '';
+  z-index: -1;
+  margin: -5%;
+  box-shadow: inset 0 0 0 2px;
+  animation: clipMe 10s linear infinite;
+}
+.bb::before {
+  animation-delay: -4s;
+}
+.bb:hover::after, .bb:hover::before {
+  background-color: #D2691E;
+}
+
+@keyframes clipMe {
+  0%, 100% {
+    clip: rect(0px, 220px, 2px, 0px);
+  }
+  25% {
+    clip: rect(0px, 2px, 220px, 0px);
+  }
+  50% {
+    clip: rect(218px, 220px, 220px, 0px);
+  }
+  75% {
+    clip: rect(0px, 220px, 220px, 218px);
+  }
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-color:#100 ;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing:border-box;
+}
+
+@keyframes fadeout{
+    from {opacity:1;}
+    to{opacity:0;}
+}

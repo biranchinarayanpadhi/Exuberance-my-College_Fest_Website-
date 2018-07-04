@@ -1,0 +1,328 @@
+﻿<html>
+<head>
+<title>GAMES</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#space {
+  background: #1A0000;
+  width: 100%;
+  height: 1000%;
+  -webkit-animation-name: starField;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+  animation-name: starField;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  -moz-animation-name: starField;
+  -moz-animation-duration: 30s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-delay: 0s;
+  -moz-animation-timing-function: linear;
+  -o-animation-name: starField;
+  -o-animation-duration: 30s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-delay: 0s;
+  -o-animation-timing-function: linear;
+  z-index:-10
+}
+
+@keyframes starField {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+    -moz-filter: hue-rotate(0deg);
+    -o-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -o-filter: hue-rotate(360deg);
+  }
+}
+
+#space,
+.stars {
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background:cover;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+}
+
+.stars {
+  background-image: radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: zoom 5s infinite;
+  opacity: 0;
+}
+
+.stars:nth-child(1) {
+  background-position: 50% 50%;
+  animation-delay: 0s;
+}
+
+.stars:nth-child(2) {
+  background-position: 20% 60%;
+  animation-delay: 1s;
+}
+
+.stars:nth-child(3) {
+  background-position: -20% -30%;
+  animation-delay: 2s;
+}
+
+.stars:nth-child(4) {
+  background-position: 40% -80%;
+  animation-delay: 3s;
+}
+
+.stars:nth-child(5) {
+  background-position: -20% 30%;
+  animation-delay: 4s;
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    animation-timing-function: ease-in;
+  }
+  85% {
+    opacity: 1;
+    transform: scale(2.8);
+    animation-timing-function: linear;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3.5);
+  }
+}
+</style>
+</head>
+<body>
+<div id="space" >
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+  </div>
+<style>
+@import "compass/css3";
+
+/*Be sure to look into browser prefixes for keyframes and annimations*/
+.flash {
+   animation-name: flash;
+    animation-duration: 1s;
+    animation-timing-function: divnear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color:rgb(0,0,0,0.5);}
+    to {color: black;}
+}
+    </style>
+    
+ <h2 class="flash" style="text-align:center; font-family:algerian ;font-size: 60px;padding-bottom: 5px; color: rgb(218, 165, 32); opacity: 1">GAMES</h2>
+
+<!-- first -->
+ 
+    <div class="hovereffect">
+       <img class="img-responsive" src="4.jpg" width="330" height="400" hspace="80" vspace="40">
+         <div class="overlay">
+           <h2>name of event</h2>
+           <button class="info" onclick="document.getElementById('ticketModal1').style.display='block'">details</button>
+        </div>
+    </div>
+
+
+<!-- HOVER EFFECT -->
+
+<style type="text/css">
+.hovereffect {
+  width: 400px;
+  height: 500px;
+  float:left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  border-radius:10%
+  }
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  border-radius:10%
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.7);
+  -ms-transform: scale(1.7);
+  transform: scale(1.7);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 15px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect button.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 3px 7px;
+  border: 3px solid #fff;
+  margin: 25px 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect button.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect button.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover button.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+   transform: scale(1);
+}
+</style>
+
+
+<!-- second -->
+
+<div class="hovereffect">
+        <img class="w3-round-small" src="5.jpg" width="330" height="400" hspace="80" vspace="40">
+        <div class="overlay">
+           <h2>program 2</h2>
+            <button class="info" onclick="document.getElementById('ticketModal2').style.display='block'">details</button>
+        </div>
+ </div>
+
+
+<!-- third -->
+<div class="hovereffect">
+        <img class="w3-round-small" src="6.jpg" width="330" height="400" hspace="80" vspace="40">
+        <div class="overlay">
+           <h2>program 3</h2>
+            <button class="info" onclick="document.getElementById('ticketModal3').style.display='block'">details</button>
+        </div>
+ </div>
+
+
+<style>
+.ex1 img{
+    -webkit-transition: margin 1.0s ease-out;
+    -moz-transition: margin 1.0s ease-out;
+    -o-transition: margin 1.0s ease-out;
+}
+
+
+ 
+.ex1 img:hover {
+    margin-top: 25px;
+}
+
+
+</style>
+</div>	
+    <div id="ticketModal1" class="w3-modal">
+     <div class="w3-modal-content w3-animate-top w3-card-4" style="max-width:800px">
+      <header class="w3-container w3-black w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal1').style.display='none'" 
+       class="w3-button w3-black w3-xlarge w3-display-topright">X</span>
+         <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+             <center><b>About PMEC</b></center>
+Parala Maharaja Engineering College (P.M.E.C), Berhampur came into existence in the year 2009 as a constituent college of Biju Pattnaik University of Technology (BPUT),Odisha. This college is one of the premier technical institute in the state and is funded by the government of Odisha. The main objective of the institution is to produce quality technocrats in various streams . Government of Odisha has recognized this institution as a leading institution of repute and has a plan to develop it as a centre of excellence under plan funding. At present, the campus consists of institutional academic block and a workshop block( under construction). As the architectural plan suggests, three more academic blocks, halls of residence, staff quarters, world class auditoria, parks and playgrounds will be developed in subsequent phases of construction. The silk City-Berhampur is located on the eastern coast-line of Odisha. It is one of the oldest cities of the state famous for its silk works, temples and culture. The city which is declared as a municipal corporation is well-connected by roads and rails to all parts of India.
+
+              </div>
+          </div>
+         </div>
+      
+        <div id="ticketModal2" class="w3-modal">
+     <div class="w3-modal-content w3-animate-top w3-card-4" style="max-width:800px">
+      <header class="w3-container w3-black w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal2').style.display='none'" 
+       class="w3-button w3-black w3-xlarge w3-display-topright">X</span>
+         <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+             <center><b>About PMEC</b></center>
+Parala Maharaja Engineering College (P.M.E.C), Berhampur came into existence in the year 2009 as a constituent college of Biju Pattnaik University of Technology (BPUT),Odisha. This college is one of the premier technical institute in the state and is funded by the government of Odisha. The main objective of the institution is to produce quality technocrats in various streams . Government of Odisha has recognized this institution as a leading institution of repute and has a plan to develop it as a centre of excellence under plan funding. At present, the campus consists of institutional academic block and a workshop block( under construction). As the architectural plan suggests, three more academic blocks, halls of residence, staff quarters, world class auditoria, parks and playgrounds will be developed in subsequent phases of construction. The silk City-Berhampur is located on the eastern coast-line of Odisha. It is one of the oldest cities of the state famous for its silk works, temples and culture. The city which is declared as a municipal corporation is well-connected by roads and rails to all parts of India.
+
+              </div>
+          </div>
+         </div>
+    
+    <div id="ticketModal3" class="w3-modal">
+     <div class="w3-modal-content w3-animate-top w3-card-4" style="max-width:800px">
+      <header class="w3-container w3-black w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal3').style.display='none'" 
+       class="w3-button w3-black w3-xlarge w3-display-topright">X</span>
+         <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+             <center><b>About PMEC</b></center>
+Parala Maharaja Engineering College (P.M.E.C), Berhampur came into existence in the year 2009 as a constituent college of Biju Pattnaik University of Technology (BPUT),Odisha. This college is one of the premier technical institute in the state and is funded by the government of Odisha. The main objective of the institution is to produce quality technocrats in various streams . Government of Odisha has recognized this institution as a leading institution of repute and has a plan to develop it as a centre of excellence under plan funding. At present, the campus consists of institutional academic block and a workshop block( under construction). As the architectural plan suggests, three more academic blocks, halls of residence, staff quarters, world class auditoria, parks and playgrounds will be developed in subsequent phases of construction. The silk City-Berhampur is located on the eastern coast-line of Odisha. It is one of the oldest cities of the state famous for its silk works, temples and culture. The city which is declared as a municipal corporation is well-connected by roads and rails to all parts of India.
+
+              </div>
+          </div>
+         </div>
+
+        
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div>
+        <center><h3><a href="web.html" style="color:white;">HOME</a></h3></center>
+        </div>
+
+
+
+</body>
+</html>

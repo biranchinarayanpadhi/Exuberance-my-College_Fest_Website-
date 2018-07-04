@@ -1,0 +1,103 @@
+
+            
+            .div1{
+             
+                position: relative;
+                color:#fff;
+                text-shadow:0px 0px 10px #d2691e;
+            }
+            
+            
+            .div1 h1{
+                margin: auto;
+                font-size:50px;
+                animation:blinking 2s infinite;
+            }
+            
+            @keyframes blinking{
+            0%{opacity:1.0}
+            50%{opacity:0.0}
+            100%{opacity:1.0}
+        }
+            .div{
+                
+                height:300px;
+                width:200px;
+                border:2px solid #d2691e; 
+                border-radius:0.8rem;
+                display:inline-block;
+                position:relative;
+                margin-top:1rem;
+                margin-left:3rem;
+                animation:animated 4s infinite;
+            }
+            
+            div img{
+               height:300px;
+                width:200px;
+                border-radius:0.8rem;
+		
+            }
+            @keyframes animated{
+            
+            0%{
+                transform:translateY(0px);
+            }
+            50%{
+                 transform:translateY(20px);
+            }
+            100%{
+                 transform:translateY(0px);
+            }
+        }
+            
+            .div:nth-child(1){
+                animation-delay:.3s;
+            }
+            .div:nth-child(2){
+                animation-delay:1.0s;
+            }
+            .div:nth-child(3){
+                animation-delay:1.7s;
+            }
+            .div:nth-child(4){
+                animation-delay:2.4s;
+            }
+        
+            
+         .div :not(img){
+        position:absolute;
+        top:auto;
+        z-index:1;
+        color:#fff;
+        text-align:center;
+        width:auto;
+        opacity:0;
+        transition:.3s;
+        
+    }
+    
+  .div h3{
+        top:70%;
+    }
+            
+            .div h2{
+        top:30%;
+    }
+    
+    
+        
+    .div:hover :not(img){
+        
+        color:lightyellow;
+        opacity:1;
+        text-shadow:0px 0px 10px red;
+            }
+                   
+    
+            .div:hover img{
+        filter:blur(2px) brightness(60%);
+        
+        box-shadow:0px 0px 50px #d2691e;
+    }
+            

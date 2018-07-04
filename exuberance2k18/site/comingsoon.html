@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Coming Soon</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            body{
+                background-color: black;
+            }
+            h1{
+                color:skyblue;
+                font-size:49px;
+            }
+            h2{
+                color:skyblue;
+            }
+            .blink{
+            animation-name: blink;
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
+        }
+        .blink:hover{
+            animation-play-state: paused;
+        }
+        
+        @keyframes blink{
+            0%{opacity:1.0}
+            50%{opacity:0.0}
+            100%{opacity:1.0}
+        }
+            .blink{
+                margin-top:20rem;
+            }
+        @media screen and (max-width:760px){
+            .blink{
+                margin-top:15rem;
+                font-size:33px;
+            }
+            
+            h2{
+                font-size: 15px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+    
+        
+        <center>
+    <h1 class="blink"><b>C O M I N G &nbsp;&nbsp;S O O N ! !</b></h1>
+            <h2>Details about Events and Robotics and every Programmes will be notified Soon.</h2>
+        </center>
+    </body>
+</html>

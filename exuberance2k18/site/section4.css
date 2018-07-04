@@ -1,0 +1,330 @@
+.section4{
+     margin-top:10rem;
+        height:40%;
+        width:99%;
+        
+}
+
+.title{
+    height:15%;
+    width:47%;
+   
+     border-radius:0.8rem;
+    box-shadow: 0px 0px 50px #D2691E;
+    font-family:'Anton' . sans-serif;
+    color:#fff;
+    font-size:2rem;
+    text-align:center;
+    position:relative;
+    margin-left:22rem;
+     
+}
+
+.title h1 span{
+    margin-top:1rem;
+    font-size:70px;
+    color:#fff;
+            text-shadow:0px 0px 10px #D2691E;
+            background:transparent;
+            font-family:arial;
+            display:inline-block;
+            animation: animate 2s infinite;  
+    
+} 
+
+.title h1 span:hover{
+    animation-play-state: paused;
+} 
+
+ @keyframes animate{
+            
+            0%{
+                transform:translateY(0px);
+            }
+            50%{
+                 transform:translateY(-20px);
+            }
+            100%{
+                 transform:translateY(0px);
+            }
+        }
+        
+        h1 span:nth-child(1){
+            animation-delay:.2s;
+        }
+        h1 span:nth-child(2){
+            animation-delay:.4s;
+        }
+        h1 span:nth-child(3){
+            animation-delay:.6s;
+        }
+        h1 span:nth-child(4){
+            animation-delay:.8s;
+        }
+         h1 span:nth-child(5){
+            animation-delay:.8s;
+        }
+         h1 span:nth-child(6){
+            animation-delay:1.0s;
+        }
+         h1 span:nth-child(7){
+            animation-delay:1.2s;
+        }
+         h1 span:nth-child(8){
+            animation-delay:1.4s;
+        }
+         h1 span:nth-child(9){
+            animation-delay:1.6s;
+        }
+         h1 span:nth-child(10){
+            animation-delay:1.8s;
+        }
+         h1 span:nth-child(11){
+            animation-delay:2.0s;
+        }
+
+
+
+.sec4a{
+    height:100%;
+    width:100%;
+    
+     border-radius:0.5rem;
+    
+}
+.blur_image{
+    
+    height:50%;
+    width:20%;
+    display:inline-block;
+     
+     border-radius:0.5rem;
+    margin-top:8rem;
+    margin-left:11rem;
+    position:relative;
+     animation:animated1 3s infinite;
+}
+@keyframes animated1{
+    0%{ transform:translateY(0rem);}
+    50%{  transform:translateY(2rem);}
+    100%{ transform:translateY(0rem);}
+}
+.blur_image:nth-child(1){
+    animation-delay:.2s;
+}
+.blur_image:nth-child(2){
+    animation-delay:1.2s;
+}
+
+.kalia{
+     height:50%;
+    width:10%;
+    float:left;
+     
+     border-radius:0.5rem;
+}
+.kalia1{
+     height:50%;
+    width:10%;
+    float:right;
+    
+     border-radius:0.5rem;
+    margin-right:-3rem;
+    
+}
+
+.blur_image img{
+        width:100%;
+        height:100%;
+    background-size:100%;
+        border-radius: 0.8rem;
+        transition:.3s;
+        filter:blur(0px) brightness(100%);
+       
+    }
+
+
+ 
+    
+    .blur_image:hover img{
+        filter:blur(2px) brightness(60%);
+        
+        box-shadow: -20px 20px 5px #D2691E;
+    }
+    
+
+    .blur_image :not(img){
+        position:absolute;
+        top:30%;
+        z-index:1;
+        color:#fff;
+        text-align:center;
+        width:90%;
+        opacity:0;
+        transition:.3s;
+    }
+    
+    .blur_image h3{
+        top:50%;
+    }
+    
+    .blur_image:hover :not(img){
+        
+        color:#fff;
+        text-shadow:0px 0px 13px #d2691e;
+        font-size:20px;
+        opacity:1;
+    }
+    
+
+
+@media screen and (max-width:770px){
+    
+    .section4{
+     margin-top:4rem;
+        height:40%;
+        width:100%;
+        
+}
+
+.title{
+    height:12%;
+    width:88%;
+   
+     border-radius:0.8rem;
+    box-shadow: 0px 0px 50px #D2691E;
+    font-family:'Anton' . sans-serif;
+    color:#fff;
+    font-size:20px;
+    text-align:center;
+    position:relative;
+    margin-left:2rem;
+    margin-top:-1rem;
+     
+}
+
+.title h1 span{
+    margin-top:1.5rem;
+    font-size:2rem;
+    color:#fff;
+        text-shadow:0px 0px 10px #D2691E;
+     background:transparent;        font-family:arial;
+     display:inline-block;
+    animation: animate 2s infinite;  
+    
+} 
+    
+    .title h1 span:hover{
+    animation-play-state: paused;
+} 
+
+ @keyframes animate{
+            
+            0%{
+                transform:translateY(0px);
+            }
+            50%{
+                 transform:translateY(-20px);
+            }
+            100%{
+                 transform:translateY(0px);
+            }
+        }
+        
+        h1 span:nth-child(1){
+            animation-delay:.2s;
+        }
+        h1 span:nth-child(2){
+            animation-delay:.4s;
+        }
+        h1 span:nth-child(3){
+            animation-delay:.6s;
+        }
+        h1 span:nth-child(4){
+            animation-delay:.8s;
+        }
+         h1 span:nth-child(5){
+            animation-delay:.8s;
+        }
+         h1 span:nth-child(6){
+            animation-delay:1.0s;
+        }
+         h1 span:nth-child(7){
+            animation-delay:1.2s;
+        }
+         h1 span:nth-child(8){
+            animation-delay:1.4s;
+        }
+         h1 span:nth-child(9){
+            animation-delay:1.6s;
+        }
+         h1 span:nth-child(10){
+            animation-delay:1.8s;
+        }
+         h1 span:nth-child(11){
+            animation-delay:2.0s;
+        }
+
+    .sec4a{
+    height:100%;
+    width:100%;
+    
+     border-radius:0.5rem;
+    
+}
+.blur_image{
+    
+    height:20%;
+    width:20%;
+    display:inline-block;
+     
+     border-radius:0.5rem;
+    margin-top:3rem;
+    margin-left:3rem;
+    position:relative;
+     animation:animated1 3s infinite;
+}
+    
+    
+@keyframes animated1{
+    0%{ transform:translateY(0rem);}
+    50%{  transform:translateY(2rem);}
+    100%{ transform:translateY(0rem);}
+}
+.blur_image:nth-child(1){
+    animation-delay:.2s;
+}
+.blur_image:nth-child(2){
+    animation-delay:1.2s;
+}
+
+.kalia img{
+     height:72%;
+    width:-5%;
+    float:left;
+     
+     border-radius:0.5rem;
+    margin-top:1rem;
+}
+.kalia1 img{
+     height:72%;
+    width:-5%;
+    float:right;
+    
+     border-radius:0.5rem;
+    margin-right:3rem;
+    margin-top:1rem;
+    
+}
+    
+    
+    .blur_image:hover :not(img){
+        
+        color:#fff;
+        text-shadow:0px 0px 13px #d2691e;
+        font-size:10px;
+        opacity:1;
+    }
+    
+}
+

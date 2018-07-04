@@ -1,0 +1,179 @@
+﻿<html>
+<head>
+<title>ATTRACTIONS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+#space {
+  background: #1A0000;
+  width: 100%;
+  height: 1000%;
+  -webkit-animation-name: starField;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+  animation-name: starField;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  -moz-animation-name: starField;
+  -moz-animation-duration: 30s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-delay: 0s;
+  -moz-animation-timing-function: linear;
+  -o-animation-name: starField;
+  -o-animation-duration: 30s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-delay: 0s;
+  -o-animation-timing-function: linear;
+  z-index:-10
+}
+
+@keyframes starField {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+    -moz-filter: hue-rotate(0deg);
+    -o-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -o-filter: hue-rotate(360deg);
+  }
+}
+
+#space,
+.stars {
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background:cover;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+}
+
+.stars {
+  background-image: radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: zoom 5s infinite;
+  opacity: 0;
+}
+
+.stars:nth-child(1) {
+  background-position: 50% 50%;
+  animation-delay: 0s;
+}
+
+.stars:nth-child(2) {
+  background-position: 20% 60%;
+  animation-delay: 1s;
+}
+
+.stars:nth-child(3) {
+  background-position: -20% -30%;
+  animation-delay: 2s;
+}
+
+.stars:nth-child(4) {
+  background-position: 40% -80%;
+  animation-delay: 3s;
+}
+
+.stars:nth-child(5) {
+  background-position: -20% 30%;
+  animation-delay: 4s;
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    animation-timing-function: ease-in;
+  }
+  85% {
+    opacity: 1;
+    transform: scale(2.8);
+    animation-timing-function: linear;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3.5);
+  }
+}
+</style>
+
+</head>
+<div id="space" >
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+  </div>
+
+<style>
+@import "compass/css3";
+
+/*Be sure to look into browser prefixes for keyframes and annimations*/
+.flash {
+   animation-name: flash;
+    animation-duration: 1s;
+    animation-timing-function: divnear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color:rgb(0,0,0,0.5);}
+    to {color: black;}
+}
+    </style>
+    
+ <h2 class="flash" style="text-align:center; font-family:algerian ;font-size: 60px;padding-bottom: 5px; color: rgb(218, 165, 32); opacity: 1">ATTRACTIONS</h2>
+<!-- first -->
+ 
+       <img class="img-responsive" src="1.jpg" width="330"	 height="400" hspace="55" vspace="40" style="border-radius: 15px">
+
+
+<!-- second -->
+
+
+        <img class="w3-round-small" src="3.jpg" width="330" height="400" hspace="55" vspace="40" style="border-radius: 15px">
+
+
+
+<!-- third -->
+
+        <img class="w3-round-small" src="2.jpg" width="330" height="400" hspace="55" vspace="40" style="border-radius: 15px">
+    
+
+
+
+   
+<div>
+<footer><center><h3>
+    <a href="web.html" style="color:white;">HOME</a></h3></center>
+</footer>
+    </div>
+
+
+
+</body>
+</html>

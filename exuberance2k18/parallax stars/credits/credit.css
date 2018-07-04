@@ -1,0 +1,211 @@
+
+            
+            .kalia{
+              
+                position:relative;
+                height:100%;
+                width:100%;
+                
+            }
+            .bir{
+               
+                width:100%;
+                height:43%;
+               
+                
+                margin-top:1rem;
+            }
+            
+            #kal1{
+            
+                height:250px;
+                width:250px;
+                display:inline-block;
+    
+                border-radius:50%;
+                margin-top:1rem;
+                margin-left:2rem;
+            }
+            
+            .biru1{
+                
+                width:100%;
+                height:42%;
+                
+                margin-top:0rem;
+            }
+            
+            #kal2{
+                
+                 height:250px;
+                width:250px;
+                display:inline-block;
+               
+                border-radius:50%;
+                margin-top:1rem;
+                margin-left:4rem;
+            }
+            
+            
+            #kal1 img{
+        width:100%;
+        height:100%;
+        border-radius: 50%;
+        transition:.3s;
+        filter:blur(0px) brightness(100%);
+        border:2px solid #D2691E;
+        border-radius:50%;
+       animation:rotated 3s infinite;
+    }
+    
+     @keyframes rotated{
+            
+            0%{
+                transform:rotate(0deg);
+            }
+            50%{
+                 transform:rotate(20deg);
+            }
+            100%{
+                 transform:rotate(0deg);
+            }
+        }
+
+
+    #kal1:hover img{
+        filter:blur(2px) brightness(60%);
+        
+        box-shadow:0px 0px 50px #d2691e;
+    }
+    
+
+
+        #kal2 img{
+        width:100%;
+        height:100%;
+        border-radius: 50%;
+        transition:.3s;
+        filter:blur(0px) brightness(100%);
+       border:2px solid #D2691E;
+        border-radius:50%;
+            animation:rotateed 3s infinite;
+    }
+    
+@keyframes rotateed{
+    
+    0%{transform:rotate(0deg);}
+    50%{   transform:rotate(-20deg); }
+    100%{ transform:rotate(0deg); }
+}
+    #kal2:hover img{
+        filter:blur(2px) brightness(60%);
+        
+        box-shadow:0px 0px 50px #d2691e;
+    }
+            
+            
+            
+        #kal1 :not(img){
+        position:absolute;
+        top:15%;
+        z-index:1;
+        color:#fff;
+        text-align:center;
+        width:18%;
+        opacity:0;
+        transition:.3s;
+    }
+    
+   #kal1 h2{
+        top:18%;
+    }
+    
+        
+    #kal1:hover :not(img){
+        
+        color:lightyellow;
+        opacity:1;
+        text-shadow:0px 0px 10px red;
+            }
+            
+            
+         #kal2 :not(img){
+        position:absolute;
+        top:59%;
+        z-index:1;
+        color:#fff;
+        text-align:center;
+        width:18%;
+        opacity:0;
+        transition:.3s;
+    }
+    
+   #kal2 h2{
+        top:62%;
+    }
+    
+    #kal2:hover :not(img){
+        
+        color:lightyellow;
+        text-shadow:0px 0px 10px red;
+        opacity:1;
+    }
+           
+           
+        header{
+                  height:8%;
+                  width:100%;
+                 
+            font-size:35px;
+            font-size:35px;
+                 background:transparent;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+.exub{
+                float:left;
+            }
+        .kal123 span{
+            color:#fff;
+            text-shadow:0px 0px 10px #D2691E;
+            background:transparent;
+            font-family:arial;
+            display:inline-block;
+            animation: animate 1s infinite;
+        }
+        
+        @keyframes animate{
+            
+            0%{
+                transform:translateY(0px);
+            }
+            50%{
+                 transform:translateY(20px);
+            }
+            100%{
+                 transform:translateY(0px);
+            }
+        }
+        
+        h1 span:nth-child(1){
+            animation-delay:.2s;
+        }
+        h1 span:nth-child(2){
+            animation-delay:.4s;
+        }
+        h1 span:nth-child(3){
+            animation-delay:.7s;
+        }
+        h1 span:nth-child(4){
+            animation-delay:1.0s;
+        }
+         h1 span:nth-child(5){
+            animation-delay:1.3s;
+        }
+         h1 span:nth-child(6){
+            animation-delay:1.6s;
+        }
+
+
